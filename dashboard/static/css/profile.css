@@ -1,0 +1,152 @@
+.isiProfil {
+    background-color: #f0f0f0;
+    height: 1500px;
+  }
+  .Gambarbelakang {
+    /* background-image: url("blue.png"); */
+    background-image: linear-gradient(to right, #0069d9, #00ffff, #0d70b3);
+    z-index: -1;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-size: 100%;
+  }
+  
+  .contentProfil {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+  }
+  
+  /* konten isi  */
+  
+  .row {
+    text-align: center;
+  }
+  
+  /* SebelahKiri */
+  .ProfilUsCard {
+    /* margin-top: 20px; */
+    /* margin: 20px; */
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: "Andika New Basic", sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    max-height: 2000px;
+    max-width: 2200px;
+    padding: 40px;
+    border: 2px solid rgba(0, 0, 0, 0.13);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+    transition: all 0.2s ease-in-out;
+  }
+  .imageprofil {
+    margin-bottom: 30px;
+  }
+  .profilimage {
+    width: 300px;
+    height: auto;
+    text-align: center;
+    border: 12px solid #ffffff;
+    border-radius: 40px;
+  }
+  .rowDescription {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    column-gap: 10px;
+    font-family: "Andika New Basic", sans-serif;
+    font-size: 20px;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #5dc26a;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .dollar {
+    font-size: 20px;
+    color: #5dc26a;
+    font-weight: bold;
+    text-align: center;
+  }
+  .edit_location {
+    font-size: 25px;
+    color: grey;
+  }
+  
+  /* kanan Deskripsi  */
+  .rowDescription2 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    column-gap: 10px;
+    font-family: "Andika New Basic", sans-serif;
+    font-size: 20px;
+  }
+  .idProfile,
+  .DeskripsiJob {
+    color: grey;
+  }
+  
+  /* star */
+  .checked {
+    color: orange;
+  }
+  
+  /* star */
+  
+  .deskripsipribadi {
+    text-align: justify;
+  }
+  
+  .isideskripsiProfile {
+    margin-top: 50px;
+    font-size: 20px;
+    color: black;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .rowDescription2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 5px;
+      column-gap: 10px;
+      font-family: "Andika New Basic", sans-serif;
+      font-size: 20px;
+    }
+    .NamaProfile,
+    .DeskripsiJob {
+      font-size: 30px;
+    }
+    .idProfile {
+      display: none;
+    }
+    .rowDescription {
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 5px;
+      column-gap: 10px;
+      font-family: "Andika New Basic", sans-serif;
+      font-size: 20px;
+    }
+  
+    .ProfilUsCard {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  }
+  

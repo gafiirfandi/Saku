@@ -1,0 +1,48 @@
+/* 
+Navbar  */
+.base {
+}
+
+.navbar-brand {
+  font-family: "Lemon", cursive;
+  font-size: 30px;
+}
+.mr-auto {
+  margin-left: 850px;
+}
+
+a.nav-link {
+  font-family: "Rufina", serif;
+  font-size: 20px;
+  margin: 10px;
+
+  font-weight: 500;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: grey;
+  margin-top: 20px;
+}
+
+.isikonten:hover {
+  color: #0069d9;
+}
+
+@media only screen and (max-width: 1000px) {
+  .mr-auto {
+    margin-left: 0px;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: grey;
+    margin-top: 0px;
+  }
+  a.nav-link {
+    font-family: "Rufina", serif;
+    font-size: 15px;
+  }
+  .form-inline {
+    display: none;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    margin-top: 0px;
+  }
+}

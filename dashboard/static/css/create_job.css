@@ -1,0 +1,101 @@
+.CreateContainer {
+    background-color: #f0f0f0;
+    height: 1000px;
+  }
+  
+  .GambarBelakang {
+    background-image: linear-gradient(to right, #0069d9, #00ffff, #0d70b3);
+    z-index: -1;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    background-size: 100%;
+  }
+  
+  .contentCreate {
+    display: flex;
+    flex-direction: column;
+  
+    text-align: left;
+  
+    padding-top: 100px;
+  }
+  
+  /* Card */
+  .CreateJobCard {
+    margin-left: 400px;
+    margin-top: 50px;
+  
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: "Andika New Basic", sans-serif;
+    text-align: left;
+    border-radius: 10px;
+    max-height: 2500px;
+    max-width: 800px;
+    padding: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.13);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  /* inputan */
+  .formdeskripsi {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .active-cyan-2 input[type="text"]:focus:not([readonly]) {
+    border-bottom: 1px solid #00ecfa;
+    box-shadow: 0 1px 0 0 #00ecfa;
+  }
+  .active-cyan input[type="text"] {
+    border-bottom: 1px solid#00ECFA;
+    box-shadow: 0 1px 0 0 #00ecfa;
+  }
+  
+  .NamaProjek {
+    margin-bottom: 30px;
+    border-bottom: 1px solid#00ECFA;
+    box-shadow: 0 1px 0 0 #00ecfa;
+  }
+  .DeskripsiProjek {
+    height: 100px;
+    border-bottom: 1px solid#00ECFA;
+    box-shadow: 0 1px 0 0 #00ecfa;
+  }
+  
+  .LabelProjek {
+    font-family: "Rufina", serif;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .LabelProjekUnggahan {
+    font-family: "Rufina", serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .custom-file {
+    width: fit-content;
+  }
+  
+  .submit {
+    background-color: #08abd2;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    width: 100px;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .CreateJobCard {
+      margin: 40px;
+    }
+  }
+  

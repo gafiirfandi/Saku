@@ -1,0 +1,85 @@
+.DashboardContainer {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.active-cyan-2 input[type="text"]:focus:not([readonly]) {
+  border-bottom: 1px solid #0069d9;
+  box-shadow: 0 1px 0 0 #0069d9;
+}
+.active-cyan input[type="text"] {
+  border-bottom: 1px solid #0069d9;
+  box-shadow: 0 1px 0 0 #0069d9;
+}
+.active-cyan .fa,
+.active-cyan-2 .fa {
+  color: #0069d9;
+}
+
+/* button */
+.active-cyan-2 {
+  width: 800px;
+  height: 100px;
+  justify-content: center;
+  text-align: center;
+}
+.form-control {
+  height: 50px;
+}
+
+/* Card  */
+.DashboardWrapper {
+  max-width: 1000px;
+  /* margin-top: 20px; */
+  margin: 0 auto;
+  display: grid;
+  /* grid-template-columns: 0fr 0fr 0fr; */
+  /* justify-content: center;
+  align-items: center; */
+  grid-gap: 0px;
+  /* padding: 0 0px; */
+}
+
+.DashboardUsCard {
+  margin-top: 20px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: "Rufina", serif;
+
+  border-radius: 10px;
+  max-height: 1000px;
+  max-width: 2000px;
+  padding: 40px;
+  border: 2px solid rgba(0, 0, 0, 0.13);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+  transition: all 0.2s ease-in-out;
+}
+.col-4 {
+  font-family: "Castoro", serif;
+  font-weight: bold;
+}
+.col-7 {
+  font-family: "Rufina", serif;
+}
+
+.judulProjek {
+  font-size: 22px;
+}
+
+.DashboardUsCard:hover {
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border: 2px solid #0069d9;
+  box-shadow: 0 1px 3px #0069d9;
+}
+
+.row {
+  align-items: center;
+}
+.pagenation {
+  margin-top: 100px;
+}
