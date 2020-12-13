@@ -1,370 +1,389 @@
-{% extends 'nav.html' %} 
-{% load static %} 
-{% block title %} 
-{% endblock title%} 
+{% extends 'nav.html' %} {% load static %} {% block title %} {% endblock title%}
 {% block content %}
 <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lemon&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rufina&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Castoro&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="{% static 'css/detail_job.css' %}" />
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous"
+/>
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Lemon&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Rufina&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Castoro&display=swap"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'css/detail_job.css' %}"
+/>
 
-    <!-- TabPanels -->
-    <div class="containerDetailJob">
-      <div class="titleAndStatus">
-        <div class="row">
-          <div class="col-lg-8">
-            <h1 class="judulProjek">Teleram Active user scrapper software</h1>
-          </div>
-          <div class="col-lg-4 status">
-            <button class="btn success">Masih Tersedia</button>
-          </div>
-        </div>
+<!-- TabPanels -->
+<div class="containerDetailJob">
+  <div class="titleAndStatus">
+    <div class="row">
+      <div class="col-lg-8">
+        <h1 class="judulProjek">Teleram Active user scrapper software</h1>
       </div>
-      <!-- header -->
-      <div class="DetailJob-atas">
-        <div class="tabpanel">
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                id="home-tab"
-                data-toggle="tab"
-                href="#home"
-                role="tab"
-                aria-controls="home"
-                aria-selected="true"
-                >Detail Job</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                id="profile-tab"
-                data-toggle="tab"
-                href="#profile"
-                role="tab"
-                aria-controls="profile"
-                aria-selected="false"
-                >Pelamar
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="isitab-bawah">
-        <div class="tab-content" id="myTabContent">
-          <!-- Detail Job Content -->
-          <div
-            class="tab-pane fade show active"
-            id="home"
-            role="tabpanel"
-            aria-labelledby="home-tab"
-          >
-            <div class="row DetailJobRow">
-              <div class="col-lg-8">
-                <div class="isiKiri">
-                  <h2>Detail Proyek</h2>
-                  <div class="isikontendetail">
-                    <p class="deskripsiProyek">
-                      Current own a telegram bot created by python which not
-                      maintained by developer. It lags and hang constantly as
-                      multi users use at the same time. Claims from developer
-                      was due to low bandwidth sever. Have to create a new bot
-                      to suit the needs or migrate it. Required to adjust and
-                      maintain the bot when there’s new issue or new
-                      requirements
-                    </p>
-                  </div>
-                  <div class="LampiranFile">
-                    <a href="#">MuhammadDestaraSyanandi.jpeg</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="isiKanan text-lg-right">
-                  <p class="harga">|Rp.100.000,00 - Rp.200.000,00|</p>
-                  <p class="idProyek">ID Proyek: 28515391</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="ApplyJobWrapper">
-              <h2>Ajukan Lamaran :</h2>
-              <div class="ApplyJobCard">
-                <form>
-                  <div class="form-group">
-                    <label for="formGroupExampleInput">Harga Tawaran :</label>
-                    <input
-                      type="text"
-                      class="form-control inputTawaran"
-                      id="formGroupExampleInput"
-                      placeholder="Dalam satuan Rupiah"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="formGroupExampleInput2"
-                      >Lama Proyek akan dibuat:</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control inputTawaran"
-                      id="formGroupExampleInput2"
-                      placeholder="Dalam satuan hari"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="formGroupExampleInput3"
-                      >Jelaskan Proposal Anda :</label
-                    >
-                    <textarea
-                      class="form-control form-control-sm mr-3 w-75 DeskripsiProjek"
-                      type="text"
-                      placeholder="Apa yang membuatmu pantas untuk mendapat Proyek ini ?"
-                      aria-label="proposal"
-                    ></textarea>
-                  </div>
-                  <button type="button" class="btn btn-sm submit">
-                    Submit
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-          <!-- Pelamar Job Content -->
-          <div
-            class="tab-pane fade"
-            id="profile"
-            role="tabpanel"
-            aria-labelledby="profile-tab"
-          >
-            <div class="isiListPelamar">
-              <div class="row baridarilist">
-                <div class="col-lg-8">
-                  <div class="Kumpulancard">
-                    <div class="listpelamarCard">
-                      <div class="row">
-                        <div class="col-lg-8 KananIsiCard">
-                          <div class="fotoDanNama">
-                            <img src="selfie.jpg" alt="" class="profile" />
-                            <p class="NamaPelamar">Muhammad Destara Syanandi</p>
-                            <p class="idNamaPelamar">@destarass</p>
-                          </div>
-                          <div class="rowDescription2">
-                            <div class="bintang">
-                              <span class="fa fa-star checked"></span>
-                              <span class="fa fa-star checked"></span>
-                              <span class="fa fa-star checked"></span>
-                              <span class="fa fa-star checked"></span>
-                              <span class="fa fa-star"></span>
-                            </div>
-                            <p>(3 ulasan)</p>
-                          </div>
-                          <div class="isiProposal">
-                            <p>
-                              hello, so from what you've told about your bot it
-                              looks like synchronous coding been used to build
-                              it so multi users may make problems. i'm ready to
-                              review your current bot's code and reimplement it
-                              with async approach i have a good experience with
-                              tg bots creation. let me know if you're
-                              interested. thanks.
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-lg-4">
-                          <div class="kiriCard text-right">
-                            <p class="hargaperOrang">Rp.250.000,00</p>
-                            <p class="rangeDays">dalam 4 Hari</p>
-                            <p class="waktupost">Menjawab dalam beberapa jam</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="listpelamarCard">
-                      <div class="row">
-                        <div class="col-lg-8 KananIsiCard">
-                          <div class="fotoDanNama">
-                            <img src="selfie.jpg" alt="" class="profile" />
-                            <p class="NamaPelamar">Muhammad Destara Syanandi</p>
-                            <p class="idNamaPelamar">@destarass</p>
-                          </div>
-                          <div class="rowDescription2">
-                            <div class="bintang">
-                              <span class="fa fa-star checked"></span>
-                              <span class="fa fa-star checked"></span>
-                              <span class="fa fa-star checked"></span>
-                              <span class="fa fa-star checked"></span>
-                              <span class="fa fa-star"></span>
-                            </div>
-                            <p>(3 ulasan)</p>
-                          </div>
-                          <div class="isiProposal">
-                            <p>
-                              hello, so from what you've told about your bot it
-                              looks like synchronous coding been used to build
-                              it so multi users may make problems. i'm ready to
-                              review your current bot's code and reimplement it
-                              with async approach i have a good experience with
-                              tg bots creation. let me know if you're
-                              interested. thanks.
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-lg-4">
-                          <div class="kiriCard text-right">
-                            <p class="hargaperOrang">Rp.250.000,00</p>
-                            <p class="rangeDays">dalam 4 Hari</p>
-                            <p class="waktupost">Menjawab dalam beberapa jam</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="listpelamarCard">
-                      <div class="row">
-                        <div class="col-lg-8 KananIsiCard">
-                          <div class="fotoDanNama">
-                            <img src="selfie.jpg" alt="" class="profile" />
-                            <p class="NamaPelamar">Muhammad Destara Syanandi</p>
-                            <p class="idNamaPelamar">@destarass</p>
-                          </div>
-                          <div class="rowDescription2">
-                            <div class="bintang">
-                              <span class="fa fa-star checked"></span>
-                              <span class="fa fa-star checked"></span>
-                              <span class="fa fa-star checked"></span>
-                              <span class="fa fa-star checked"></span>
-                              <span class="fa fa-star"></span>
-                            </div>
-                            <p>(3 ulasan)</p>
-                          </div>
-                          <div class="isiProposal">
-                            <p>
-                              hello, so from what you've told about your bot it
-                              looks like synchronous coding been used to build
-                              it so multi users may make problems. i'm ready to
-                              review your current bot's code and reimplement it
-                              with async approach i have a good experience with
-                              tg bots creation. let me know if you're
-                              interested. thanks.
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-lg-4">
-                          <div class="kiriCard text-right">
-                            <p class="hargaperOrang">Rp.250.000,00</p>
-                            <p class="rangeDays">dalam 4 Hari</p>
-                            <p class="waktupost">Menjawab dalam beberapa jam</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="listpelamarCard">
-                      <div class="row">
-                        <div class="col-lg-8 KananIsiCard">
-                          <div class="fotoDanNama">
-                            <img src="selfie.jpg" alt="" class="profile" />
-                            <p class="NamaPelamar">Muhammad Destara Syanandi</p>
-                            <p class="idNamaPelamar">@destarass</p>
-                          </div>
-                          <div class="rowDescription2">
-                            <div class="bintang">
-                              <span class="fa fa-star checked"></span>
-                              <span class="fa fa-star checked"></span>
-                              <span class="fa fa-star checked"></span>
-                              <span class="fa fa-star checked"></span>
-                              <span class="fa fa-star"></span>
-                            </div>
-                            <p>(3 ulasan)</p>
-                          </div>
-                          <div class="isiProposal">
-                            <p>
-                              hello, so from what you've told about your bot it
-                              looks like synchronous coding been used to build
-                              it so multi users may make problems. i'm ready to
-                              review your current bot's code and reimplement it
-                              with async approach i have a good experience with
-                              tg bots creation. let me know if you're
-                              interested. thanks.
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-lg-4">
-                          <div class="kiriCard text-right">
-                            <p class="hargaperOrang">Rp.250.000,00</p>
-                            <p class="rangeDays">dalam 4 Hari</p>
-                            <p class="waktupost">Menjawab dalam beberapa jam</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="ringkasanCard">
-                    <div class="grouppenjelasan">
-                      <p><b>Anggaran :</b></p>
-                      <p class="angka1">Rp.30.000,00 – Rp.250.000,00</p>
-                    </div>
-                    <div class="grouppenjelasan">
-                      <p><b>Penawaran :</b></p>
-                      <p class="angka1">3</p>
-                    </div>
-                    <div class="grouppenjelasan">
-                      <p><b>Penawaran rata-rata :</b></p>
-                      <p class="angka1">Rp.100.000,00</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr />
-          </div>
-        </div>
+      <div class="col-lg-4 status">
+        <button class="btn success">Masih Tersedia</button>
       </div>
     </div>
+  </div>
+  <!-- header -->
+  <div class="DetailJob-atas">
+    <div class="tabpanel">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            id="home-tab"
+            data-toggle="tab"
+            href="#home"
+            role="tab"
+            aria-controls="home"
+            aria-selected="true"
+            >Detail Job</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="profile-tab"
+            data-toggle="tab"
+            href="#profile"
+            role="tab"
+            aria-controls="profile"
+            aria-selected="false"
+            >Pelamar
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-    <!-- Bootstrap core JavaScript
+  <div class="isitab-bawah">
+    <div class="tab-content" id="myTabContent">
+      <!-- Detail Job Content -->
+      <div
+        class="tab-pane fade show active"
+        id="home"
+        role="tabpanel"
+        aria-labelledby="home-tab"
+      >
+        <div class="row DetailJobRow">
+          <div class="col-lg-8">
+            <div class="isiKiri">
+              <h2>Detail Proyek</h2>
+              <div class="isikontendetail">
+                <p class="deskripsiProyek">
+                  Current own a telegram bot created by python which not
+                  maintained by developer. It lags and hang constantly as multi
+                  users use at the same time. Claims from developer was due to
+                  low bandwidth sever. Have to create a new bot to suit the
+                  needs or migrate it. Required to adjust and maintain the bot
+                  when there’s new issue or new requirements
+                </p>
+              </div>
+              <div class="LampiranFile">
+                <a href="#">MuhammadDestaraSyanandi.jpeg</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="isiKanan text-lg-right">
+              <p class="harga">|Rp.100.000,00|</p>
+              <p class="idProyek">ID Proyek: 28515391</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ApplyJobWrapper">
+          <h2>Ajukan Lamaran :</h2>
+          <div class="ApplyJobCard">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Harga Tawaran :</label>
+                <input
+                  type="text"
+                  class="form-control inputTawaran"
+                  id="formGroupExampleInput"
+                  placeholder="Rp.100.000,00"
+                  disabled="Rp.100.000,00"
+                />
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput2"
+                  >Lama Proyek akan dibuat:</label
+                >
+                <input
+                  type="text"
+                  class="form-control inputTawaran"
+                  id="formGroupExampleInput2"
+                  placeholder="Dalam satuan hari"
+                />
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput3"
+                  >Jelaskan Proposal Anda :</label
+                >
+                <textarea
+                  class="form-control form-control-sm mr-3 w-75 DeskripsiProjek"
+                  type="text"
+                  placeholder="Apa yang membuatmu pantas untuk mendapat Proyek ini ?"
+                  aria-label="proposal"
+                ></textarea>
+              </div>
+              <button type="button" class="btn btn-sm submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Pelamar Job Content -->
+      <div
+        class="tab-pane fade"
+        id="profile"
+        role="tabpanel"
+        aria-labelledby="profile-tab"
+      >
+        <div class="isiListPelamar">
+          <div class="row baridarilist">
+            <div class="col-lg-8">
+              <div class="Kumpulancard">
+                <div class="listpelamarCard">
+                  <div class="row">
+                    <div class="col-lg-8 KananIsiCard">
+                      <div class="fotoDanNama">
+                        <img src="selfie.jpg" alt="" class="profile" />
+                        <p class="NamaPelamar">Muhammad Destara Syanandi</p>
+                        <p class="idNamaPelamar">@destarass</p>
+                      </div>
+                      <div class="rowDescription2">
+                        <div class="bintang">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                        <p>(3 ulasan)</p>
+                      </div>
+                      <div class="isiProposal">
+                        <p>
+                          hello, so from what you've told about your bot it
+                          looks like synchronous coding been used to build it so
+                          multi users may make problems. i'm ready to review
+                          your current bot's code and reimplement it with async
+                          approach i have a good experience with tg bots
+                          creation. let me know if you're interested. thanks.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="kiriCard text-right">
+                        <div class="DuaButtonTambahan">
+                          <button class="btn reviewProfile">
+                            Revie Profile >>
+                          </button>
+                          <button class="btn IsApprove">+ IsApprove</button>
+                        </div>
+                        <p class="hargaperOrang">Rp.250.000,00</p>
+                        <p class="rangeDays">dalam 4 Hari</p>
+                        <p class="waktupost">Menjawab dalam beberapa jam</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="listpelamarCard">
+                  <div class="row">
+                    <div class="col-lg-8 KananIsiCard">
+                      <div class="fotoDanNama">
+                        <img src="selfie.jpg" alt="" class="profile" />
+                        <p class="NamaPelamar">Muhammad Destara Syanandi</p>
+                        <p class="idNamaPelamar">@destarass</p>
+                      </div>
+                      <div class="rowDescription2">
+                        <div class="bintang">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                        <p>(3 ulasan)</p>
+                      </div>
+                      <div class="isiProposal">
+                        <p>
+                          hello, so from what you've told about your bot it
+                          looks like synchronous coding been used to build it so
+                          multi users may make problems. i'm ready to review
+                          your current bot's code and reimplement it with async
+                          approach i have a good experience with tg bots
+                          creation. let me know if you're interested. thanks.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="kiriCard text-right">
+                        <div class="DuaButtonTambahan">
+                          <button class="btn reviewProfile">
+                            Revie Profile >>
+                          </button>
+                          <button class="btn IsApprove">+ IsApprove</button>
+                        </div>
+                        <p class="hargaperOrang">Rp.250.000,00</p>
+                        <p class="rangeDays">dalam 4 Hari</p>
+                        <p class="waktupost">Menjawab dalam beberapa jam</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="listpelamarCard">
+                  <div class="row">
+                    <div class="col-lg-8 KananIsiCard">
+                      <div class="fotoDanNama">
+                        <img src="selfie.jpg" alt="" class="profile" />
+                        <p class="NamaPelamar">Muhammad Destara Syanandi</p>
+                        <p class="idNamaPelamar">@destarass</p>
+                      </div>
+                      <div class="rowDescription2">
+                        <div class="bintang">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                        <p>(3 ulasan)</p>
+                      </div>
+                      <div class="isiProposal">
+                        <p>
+                          hello, so from what you've told about your bot it
+                          looks like synchronous coding been used to build it so
+                          multi users may make problems. i'm ready to review
+                          your current bot's code and reimplement it with async
+                          approach i have a good experience with tg bots
+                          creation. let me know if you're interested. thanks.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="kiriCard text-right">
+                        <div class="DuaButtonTambahan">
+                          <button class="btn reviewProfile">
+                            Revie Profile >>
+                          </button>
+                          <button class="btn IsApprove">+ IsApprove</button>
+                        </div>
+                        <p class="hargaperOrang">Rp.250.000,00</p>
+                        <p class="rangeDays">dalam 4 Hari</p>
+                        <p class="waktupost">Menjawab dalam beberapa jam</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="listpelamarCard">
+                  <div class="row">
+                    <div class="col-lg-8 KananIsiCard">
+                      <div class="fotoDanNama">
+                        <img src="selfie.jpg" alt="" class="profile" />
+                        <p class="NamaPelamar">Muhammad Destara Syanandi</p>
+                        <p class="idNamaPelamar">@destarass</p>
+                      </div>
+                      <div class="rowDescription2">
+                        <div class="bintang">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                        <p>(3 ulasan)</p>
+                      </div>
+                      <div class="isiProposal">
+                        <p>
+                          hello, so from what you've told about your bot it
+                          looks like synchronous coding been used to build it so
+                          multi users may make problems. i'm ready to review
+                          your current bot's code and reimplement it with async
+                          approach i have a good experience with tg bots
+                          creation. let me know if you're interested. thanks.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="kiriCard text-right">
+                        <div class="DuaButtonTambahan">
+                          <button class="btn reviewProfile">
+                            Revie Profile >>
+                          </button>
+                          <button class="btn IsApprove">+ IsApprove</button>
+                        </div>
+                        <p class="hargaperOrang">Rp.250.000,00</p>
+                        <p class="rangeDays">dalam 4 Hari</p>
+                        <p class="waktupost">Menjawab dalam beberapa jam</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="ringkasanCard">
+                <div class="grouppenjelasan">
+                  <p><b>Anggaran :</b></p>
+                  <p class="angka1">Rp.30.000,00 – Rp.250.000,00</p>
+                </div>
+                <div class="grouppenjelasan">
+                  <p><b>Penawaran :</b></p>
+                  <p class="angka1">3</p>
+                </div>
+                <div class="grouppenjelasan">
+                  <p><b>Penawaran rata-rata :</b></p>
+                  <p class="angka1">Rp.100.000,00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"
+></script>
 {% endblock content %}

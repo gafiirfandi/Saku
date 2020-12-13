@@ -48,7 +48,7 @@
   <body>
     <div class="base">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Saku</a>
+        <a class="navbar-brand" href="#"><p class="brandLogo">Saku</p></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -73,12 +73,25 @@
               <a class="nav-link" href="#"><p class="isikonten">Messages</p></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><p class="isikonten">List</p></a>
+              <a class="nav-link" href="#"><p class="isikonten">Make Job</p></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><p class="isikonten">Orders</p></a>
+              <a class="nav-link" href="#"
+                ><p class="isikonten">Dashboard</p></a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><div class="namaRole justify-content-lg-center">
+                  <p class="namaProfil">Destara</p>
+                  <button class="btn roleNav">Employer</button>
+                </div></a
+              >
             </li>
           </ul>
+
+          {% comment %}
           <form class="form-inline my-2 my-lg-0">
             <input
               class="form-control mr-sm-2"
@@ -89,6 +102,7 @@
               Search
             </button>
           </form>
+          {% endcomment %}
         </div>
       </nav>
     </div>

@@ -15,3 +15,6 @@ def profile(request):
 
 def admin_page(request):
     return render(request, 'admin_page.html')
+
+def dashboard_employer(request):
+    return render(request, 'dashboard_employer.html')
