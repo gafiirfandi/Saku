@@ -18,3 +18,6 @@ def admin_page(request):
 
 def dashboard_employer(request):
     return render(request, 'dashboard_employer.html')
+
+def Update_Job(request):
+    return render(request, 'Update_Job.html')

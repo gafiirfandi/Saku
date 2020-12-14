@@ -4,8 +4,9 @@
 
   align-items: center;
 
-  background-color: #f8f9fa;
+  background-color: #f1faf5;
   height: 1000px;
+  padding-top: 50px;
 }
 
 .DashboardEmployerWrapper {
@@ -45,6 +46,36 @@
   /* margin-right: 50px; */
   font-size: 20px;
   width: fit-content;
+}
+
+.delete {
+  background-color: transparent;
+  color: black;
+  border: 1px solid #111111;
+  border-radius: 20px;
+  width: 80px;
+  height: auto;
+}
+
+.delete:hover {
+  background-color: #e92900;
+  color: white;
+  border: 1px solid #111111;
+}
+
+.update {
+  background-color: transparent;
+  color: black;
+  border: 1px solid #111111;
+  border-radius: 20px;
+  width: 80px;
+  height: auto;
+}
+
+.update:hover {
+  background-color: #0e1724;
+  color: white;
+  border: 1px solid #111111;
 }
 
 /* table dashboard */
