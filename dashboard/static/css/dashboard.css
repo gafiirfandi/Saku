@@ -19,11 +19,8 @@
 .dashboard-svg {
   width: 30vw;
   height: auto;
-<<<<<<< HEAD
   margin-bottom: 20px;
   
-=======
->>>>>>> ce44304162e4cfe9fb7cdff46ee0120eecbd3080
 }
 
 .dashboard-header {
@@ -33,14 +30,8 @@
   flex-wrap: wrap; */
 }
 
-<<<<<<< HEAD
 .dashboard-title{
   font-size: 40px;
-=======
-.dashboard-title {
-  margin-top: 100px;
-  font-size: 35px;
->>>>>>> ce44304162e4cfe9fb7cdff46ee0120eecbd3080
   font-weight: 900;
   text-align: center;
   margin-bottom: 40px;
