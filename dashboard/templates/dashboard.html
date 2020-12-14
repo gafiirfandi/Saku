@@ -1,154 +1,161 @@
-{% extends 'nav.html' %} 
-{% load static %} 
-{% block title %} 
-{% endblock title%} 
-{% block content %} 
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lemon&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rufina&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Castoro&display=swap"
-      rel="stylesheet"
-    />
+{% extends 'nav.html' %} {% load static %} {% block title %} {% endblock title%}
+{% block content %}
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous"
+/>
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Lemon&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Rufina&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Castoro&display=swap"
+  rel="stylesheet"
+/>
 
-    <link rel="stylesheet" type="text/css" href="{% static 'css/dashboard.css' %}" />
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'css/dashboard.css' %}"
+/>
 
-    <div class="DashboardContainer">
-      <!-- search-bar job  -->
-      <div class="dashboard-header">
-        <h1 class="dashboard-title">Let's go find jobs to boost up our income.</h1>
-        <img src="{% static 'img/working.svg' %}" class="dashboard-svg" />
-        <form
-          class="form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-2"
-        >
-          <input
-            class="form-control form-control-sm mr-3 w-75"
-            type="text"
-            placeholder="Search for Jobs"
-            aria-label="Search"
-          />
-          <i class="fas fa-search" aria-hidden="true"></i>
-        </form>
-      </div>
-      <!-- make a card -->
-      <div class="DashboardWrapper">
-        <div class="DashboardUsCard">
-          <div class="row">
-            <div class="col-7">
-              <p class="judulProjek">
-                <b>I need an ecommerce developer. website and app</b>
-              </p>
-              <p class="descProjek">
-                i am looking for developer for online store. clothes, shoes and
-                books. I want from A-Z website. will provide the txt files of usernames to add to the channel. You need to have your own script to add but I will provide the telegram accounts. This is a long term project
-              </p>
-              <p class="descWaktu">Posted on: 12:00 WIB, 14th December 2020</p>
-            </div>
-            <div class="col-5 text-right">Rp.80.000,00</div>
-          </div>
+<div class="DashboardContainer">
+  <!-- search-bar job  -->
+  <div class="dashboard-header">
+    <h1 class="dashboard-title">Let's go find jobs to boost up our income.</h1>
+    <img src="{% static 'img/working.svg' %}" class="dashboard-svg" />
+    <form
+      class="form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-2"
+    >
+      <input
+        class="form-control form-control-sm mr-3 w-75"
+        type="text"
+        placeholder="Search for Jobs"
+        aria-label="Search"
+      />
+      <i class="fa fa-search" aria-hidden="false"></i>
+    </form>
+  </div>
+  <!-- make a card -->
+  <div class="DashboardWrapper">
+    <div class="DashboardUsCard">
+      <div class="row">
+        <div class="col-7">
+          <p class="judulProjek">
+            <b>I need an ecommerce developer. website and app</b>
+          </p>
+          <p class="descProjek">
+            i am looking for developer for online store. clothes, shoes and
+            books. I want from A-Z website. will provide the txt files of
+            usernames to add to the channel. You need to have your own script to
+            add but I will provide the telegram accounts. This is a long term
+            project
+          </p>
+          <p class="descWaktu">Posted on: 12:00 WIB, 14th December 2020</p>
         </div>
-        <div class="DashboardUsCard">
-          <div class="row">
-            <div class="col-7">
-              <p class="judulProjek">
-                <b>Reinforcement learninng for Bitcoin Prediction </b>
-              </p>
-              <p class="descProjek">
-                Hello, Im looking for Reinfircement learning to predict bitcoin
-                price for next 30 minutes to 2 hours. We can use existing code
-                from github or only work in something from scratch and link it
-                to tradingview charts as signal for buy and sell.
-              </p>
-              <p class="descWaktu">Posted on: 12:00 WIB, 14th December 2020</p>
-            </div>
-            <div class="col-5 text-right">Rp.30.000,00</div>
-          </div>
-        </div>
-        <div class="DashboardUsCard">
-          <div class="row">
-            <div class="col-7">
-              <p class="judulProjek">
-                <b>Bulk Add Members to Telegram Channel </b>
-              </p>
-              <p class="descProjek">
-                I need a person to add thousands members to groups. I will
-                provide the txt files of usernames to add to the channel. You
-                need to have your own script to add but I will provide the
-                telegram accounts. This is a long term project.
-              </p>
-              <p class="descWaktu">Posted on: 12:00 WIB, 14th December 2020</p>
-            </div>
-            <div class="col-5 text-right">Rp.50.000,00</div>
-          </div>
-        </div>
-        <div class="DashboardUsCard">
-          <div class="row">
-            <div class="col-7">
-              <p class="judulProjek">
-                <b>laravel developer</b>
-              </p>
-              <p class="descProjek">
-                We need someone laravel developer to work with us We will guide
-                to get done points We will need to describe for payment gateway
-                also where to implement thanks
-              </p>
-              <p class="descWaktu">Posted on: 12:00 WIB, 14th December 2020</p>
-            </div>
-            <div class="col-5 text-right">Rp.500.000,00</div>
-          </div>
-        </div>
-      </div>
-      <!-- pagenation -->
-      <div class="d-flex justify-content-center pagenation">
-        <nav aria-label="Page navigation example">
-          <ul class="pagination">
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-                <span class="sr-only">Previous</span>
-              </a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-                <span class="sr-only">Next</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div class="col-5 text-right">Rp.80.000,00</div>
       </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+    <div class="DashboardUsCard">
+      <div class="row">
+        <div class="col-7">
+          <p class="judulProjek">
+            <b>Reinforcement learninng for Bitcoin Prediction </b>
+          </p>
+          <p class="descProjek">
+            Hello, Im looking for Reinfircement learning to predict bitcoin
+            price for next 30 minutes to 2 hours. We can use existing code from
+            github or only work in something from scratch and link it to
+            tradingview charts as signal for buy and sell.
+          </p>
+          <p class="descWaktu">Posted on: 12:00 WIB, 14th December 2020</p>
+        </div>
+        <div class="col-5 text-right">Rp.30.000,00</div>
+      </div>
+    </div>
+    <div class="DashboardUsCard">
+      <div class="row">
+        <div class="col-7">
+          <p class="judulProjek">
+            <b>Bulk Add Members to Telegram Channel </b>
+          </p>
+          <p class="descProjek">
+            I need a person to add thousands members to groups. I will provide
+            the txt files of usernames to add to the channel. You need to have
+            your own script to add but I will provide the telegram accounts.
+            This is a long term project.
+          </p>
+          <p class="descWaktu">Posted on: 12:00 WIB, 14th December 2020</p>
+        </div>
+        <div class="col-5 text-right">Rp.50.000,00</div>
+      </div>
+    </div>
+
+    {% comment %}
+    <div class="DashboardUsCard">
+      <div class="row">
+        <div class="col-7">
+          <p class="judulProjek">
+            <b>laravel developer</b>
+          </p>
+          <p class="descProjek">
+            We need someone laravel developer to work with us We will guide to
+            get done points We will need to describe for payment gateway also
+            where to implement thanks
+          </p>
+          <p class="descWaktu">Posted on: 12:00 WIB, 14th December 2020</p>
+        </div>
+        <div class="col-5 text-right">Rp.500.000,00</div>
+      </div>
+      {% endcomment %}
+    </div>
+  </div>
+  <!-- pagenation -->
+  <div class="d-flex justify-content-center pagenation">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"
+></script>
 
 {% endblock content %}
