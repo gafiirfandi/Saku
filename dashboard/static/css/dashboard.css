@@ -19,6 +19,7 @@
 .dashboard-svg{
   width: 30vw;
   height: auto;
+  margin-bottom: 20px;
   
 }
 
@@ -30,11 +31,10 @@
 }
 
 .dashboard-title{
-  margin-top: 100px;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 900;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 /* button */
 .active-cyan-2 {
