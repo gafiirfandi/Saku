@@ -1,239 +1,264 @@
 .IsiAdminPage {
-    height: 1000px;
-    padding-top: -100px;
+  height: 1000px;
+  padding-top: -100px;
+}
+
+.card-link {
+  font-size: 15px;
+}
+
+.verified:hover {
+  background-color: transparent;
+  color: #3f3d56;
+  border: 1px solid #3f3d56;
+  border-radius: 24px;
+  width: 30px;
+  height: 30px;
+}
+
+.verified {
+  background-color: #3f3d56;
+  color: white;
+  border-radius: 20px;
+  border: #3f3d56;
+  width: 30px;
+  height: 30px;
+}
+
+.admin-title {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 35px;
+  font-weight: 900;
+  padding-bottom: 20px;
+}
+
+.admin-svg {
+  display: block;
+  margin: auto;
+  width: 25vw;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.admin-arrow-down {
+  width: 35px;
+  display: block;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.tableProfile {
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-top: 40px;
+}
+
+.foto_thumbnail {
+  width: 70px;
+  height: auto;
+}
+
+.lihatProfile {
+  text-decoration: none;
+  color: #3f3d56 !important;
+  font-weight: 600;
+}
+
+.lihatProfile:hover {
+  text-decoration: none;
+  color: #3f3d56 !important;
+  font-weight: 700;
+}
+
+#table-dashboard {
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2) !important;
+  border-radius: 10px;
+}
+#table-dashboard tbody {
+  box-shadow: 0 8px 6px -6px white;
+  background-color: white;
+  border-radius: 10px;
+}
+#table-dashboard tr {
+  background-color: white;
+  border-radius: 50px;
+}
+
+#table-dashboard td {
+  border: none;
+}
+#table-dashboard tr {
+  border: none;
+}
+#table-dashboard {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  margin-top: 0; /* correct offset on first border spacing if desired */
+}
+#table-dashboard td {
+  border: solid 10px white;
+  border-style: solid none;
+  padding: 10px;
+  background-color: white;
+}
+#table-dashboard td:first-child {
+  border-left-style: solid;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#table-dashboard td:last-child {
+  border-right-style: solid;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#table-dashboard th {
+  border: solid 10px white;
+  border-style: solid none;
+  padding: 10px;
+  background-color: white;
+}
+#table-dashboard th:first-child {
+  border-left-style: solid;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#table-dashboard th:last-child {
+  border-right-style: solid;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+@media only screen and (max-width: 400px),
+  (max-width: 780px),
+  (max-width: 550px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  #table-dashboard tbody {
+    box-shadow: none !important;
+    background-color: rgba(241, 250, 245, 1);
+    border-radius: none !important;
+    display: block;
+    width: 75%;
+    margin-left: 35px;
   }
-  
-  .card-link {
+
+  #table-dashboard tr {
+    box-shadow: 0 8px 6px -6px grey;
+    padding-top: 0 5em;
+    /* background-color: white; */
+  }
+  #table-dashboard table,
+  #table-dashboard thead,
+  #table-dashboard th,
+  #table-dashboard td,
+  #table-dashboard tr {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+
+    line-height: 17px;
+    /* identical to box height */
+    color: #828282;
+
+    text-align: center;
+    display: block;
     font-size: 15px;
   }
-  .verified {
-    background-color: #0095f6;
-    color: white;
-    border-radius: 50%;
-    border: white;
-    width: 30px;
-    height: 30px;
-  }
-
-  .admin-title{
-    text-align: center;
-    padding-top: 40px;
-    font-size: 35px;
-    font-weight: 900;
-    padding-bottom: 20px;
-  }
-
-  .admin-svg{
-    display: block;
-    margin: auto;
-    width: 25vw;
-    height: auto;
-    padding-bottom: 50px; 
-  }
-
-  .admin-arrow-down{
-    width: 35px;
-    display: block;
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
-  .tableProfile {
-    margin-left: 40px;
-    margin-right: 40px;
-    padding-top: 40px;
-  }
-  
   .foto_thumbnail {
-    width: 70px;
+    width: 100%;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  #table-dashboard thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  #table-dashboard tr {
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+
+  #table-dashboard td {
+    /* Behave  like a "row" */
+    border-style: hidden;
+    position: relative;
+  }
+
+  .hideresponsive {
+    display: none;
+  }
+  #table-dashboard td.col_1 {
+    display: none;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: collapse;
+  }
+  #table-dashboard td.col_2 {
+    display: none;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: collapse;
+  }
+  #table-dashboard td.col_3 {
+    display: none;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: collapse;
+  }
+  #table-dashboard td.col_4 {
+    display: none;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: collapse;
+  }
+
+  #table-dashboard td.col_0 {
+    font-size: 15px;
+  }
+
+  #table-dashboard td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  .card-link {
+    font-size: 12px;
+  }
+
+  #table-dashboard td {
+    border: none;
+    border-radius: 20px;
+  }
+  .foto_thumbnail {
+    width: 100px;
     height: auto;
   }
-  
-  #table-dashboard tbody {
-    box-shadow: 0 8px 6px -6px white;
-    background-color: white;
-    border-radius: 10px;
+  .datepickerresponsive {
+    width: 200%;
+    max-width: 250px;
+    color: #828282;
   }
-  #table-dashboard tr {
-    background-color: white;
-    border-radius: 50px;
-  }
-  
-  #table-dashboard td {
-    border: none;
-  }
-  #table-dashboard tr {
-    border: none;
-  }
-  #table-dashboard {
-    border-collapse: separate;
-    border-spacing: 0 10px;
-    margin-top: 0; /* correct offset on first border spacing if desired */
-  }
-  #table-dashboard td {
-    border: solid 10px white;
-    border-style: solid none;
-    padding: 10px;
-    background-color: white;
-  }
-  #table-dashboard td:first-child {
-    border-left-style: solid;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-  }
+
   #table-dashboard td:last-child {
-    border-right-style: solid;
-    border-bottom-right-radius: 10px;
+    border-right-style: none !important;
+    border-bottom-right-radius: none !important;
     border-top-right-radius: 10px;
   }
-  
-  #table-dashboard th {
-    border: solid 10px white;
-    border-style: solid none;
-    padding: 10px;
-    background-color: white;
-  }
-  #table-dashboard th:first-child {
-    border-left-style: solid;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-  }
-  #table-dashboard th:last-child {
-    border-right-style: solid;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-  
-  @media only screen and (max-width: 400px),
-    (max-width: 780px),
-    (max-width: 550px),
-    (min-device-width: 768px) and (max-device-width: 1024px) {
-    /* Force table to not be like tables anymore */
-    #table-dashboard tbody {
-      box-shadow: none !important;
-      background-color: rgba(241, 250, 245, 1);
-      border-radius: none !important;
-      display: block;
-      width: 75%;
-      margin-left: 35px;
-    }
-  
-    #table-dashboard tr {
-      box-shadow: 0 8px 6px -6px grey;
-      padding-top: 0 5em;
-      /* background-color: white; */
-    }
-    #table-dashboard table,
-    #table-dashboard thead,
-    #table-dashboard th,
-    #table-dashboard td,
-    #table-dashboard tr {
-      width: 100%;
-      font-family: 'Roboto', sans-serif;
-      font-style: normal;
-      font-weight: 500;
-  
-      line-height: 17px;
-      /* identical to box height */
-      color: #828282;
-  
-      text-align: center;
-      display: block;
-      font-size: 15px;
-    }
-    .foto_thumbnail {
-      width: 100%;
-    }
-  
-    /* Hide table headers (but not display: none;, for accessibility) */
-    #table-dashboard thead tr {
-      position: absolute;
-      top: -9999px;
-      left: -9999px;
-    }
-  
-    #table-dashboard tr {
-      border: 1px solid #ccc;
-      margin-top: 20px;
-      border-radius: 20px;
-    }
-  
-    #table-dashboard td {
-      /* Behave  like a "row" */
-      border-style: hidden;
-      position: relative;
-    }
-  
-    .hideresponsive {
-      display: none;
-    }
-    #table-dashboard td.col_1 {
-      display: none;
-      width: 0;
-      height: 0;
-      opacity: 0;
-      visibility: collapse;
-    }
-    #table-dashboard td.col_2 {
-      display: none;
-      width: 0;
-      height: 0;
-      opacity: 0;
-      visibility: collapse;
-    }
-    #table-dashboard td.col_3 {
-      display: none;
-      width: 0;
-      height: 0;
-      opacity: 0;
-      visibility: collapse;
-    }
-    #table-dashboard td.col_4 {
-      display: none;
-      width: 0;
-      height: 0;
-      opacity: 0;
-      visibility: collapse;
-    }
-  
-    #table-dashboard td.col_0 {
-      font-size: 15px;
-    }
-  
-    #table-dashboard td:before {
-      /* Now like a table header */
-      position: absolute;
-      /* Top/left values mimic padding */
-      top: 6px;
-      left: 6px;
-      width: 45%;
-      padding-right: 10px;
-      white-space: nowrap;
-    }
-  
-    .card-link {
-      font-size: 12px;
-    }
-  
-    #table-dashboard td {
-      border: none;
-      border-radius: 20px;
-    }
-    .foto_thumbnail {
-      width: 100px;
-      height: auto;
-    }
-    .datepickerresponsive {
-      width: 200%;
-      max-width: 250px;
-      color: #828282;
-    }
-  
-    #table-dashboard td:last-child {
-      border-right-style: none !important;
-      border-bottom-right-radius: none !important;
-      border-top-right-radius: 10px;
-    }
-  }
-  
+}
