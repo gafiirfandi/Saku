@@ -15,23 +15,19 @@
 
 .contentCreate {
   display: flex;
-  flex-direction: column;
-
-  text-align: left;
-
+  justify-content: center;
   padding-top: 100px;
 }
 
 /* Card */
 .CreateJobCard {
-  margin-left: 400px;
   margin-top: 0px;
 
   background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  font-family: "Andika New Basic", sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: left;
   border-radius: 10px;
   max-height: 2500px;
@@ -70,12 +66,12 @@
 }
 
 .LabelProjek {
-  font-family: "Rufina", serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 600;
 }
 .LabelProjekUnggahan {
-  font-family: "Rufina", serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 600;
   margin-top: 30px;

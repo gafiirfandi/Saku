@@ -4,7 +4,7 @@
   }
   .Gambarbelakang {
     /* background-image: url("blue.png"); */
-    background-image: linear-gradient(to right, #0069d9, #00ffff, #0d70b3);
+    background-color: #0e1724;
     z-index: -1;
     object-fit: cover;
     background-repeat: no-repeat;
@@ -29,14 +29,14 @@
   .ProfilUsCard {
     /* margin-top: 20px; */
     /* margin: 20px; */
-    margin: 0 auto; /* Added */
+    margin: 0 20px; /* Added */
     float: none; /* Added */
     margin-bottom: 10px; /* Added */
     background: #fff;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    font-family: "Andika New Basic", sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     border-radius: 10px;
     max-height: 2000px;
@@ -61,8 +61,8 @@
     flex-direction: row;
     margin-bottom: 5px;
     column-gap: 10px;
-    font-family: "Andika New Basic", sans-serif;
-    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
   }
   
   .dot {
@@ -81,22 +81,39 @@
   }
   .edit_location {
     font-size: 25px;
+    margin-left: -7px;
     color: grey;
   }
   
   /* kanan Deskripsi  */
   .rowDescription2 {
     display: flex;
-    flex-direction: row;
+  
     margin-bottom: 5px;
     column-gap: 10px;
-    font-family: "Andika New Basic", sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+
+  .rowDescriptionTitle {
+    display: flex;
+    line-height: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    column-gap: 10px;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
+    font-weight: 700;
+  }
+
+  .rowDescriptionTitle h1{
+    vertical-align: middle;
   }
   .idProfile,
   .DeskripsiJob {
     color: grey;
   }
+
   
   /* star */
   .checked {
@@ -108,10 +125,19 @@
   .deskripsipribadi {
     text-align: justify;
   }
+
+  .NamaProfile{
+    font-size: 30px;
+  }
+
+  .idProfile {
+    font-size: 16px;
+  }
   
   .isideskripsiProfile {
     margin-top: 50px;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 300;
     color: black;
   }
   
@@ -123,7 +149,7 @@
       text-align: center;
       margin-bottom: 5px;
       column-gap: 10px;
-      font-family: "Andika New Basic", sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 20px;
     }
     .NamaProfile,
@@ -140,7 +166,7 @@
       flex-direction: row;
       margin-bottom: 5px;
       column-gap: 10px;
-      font-family: "Andika New Basic", sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 20px;
     }
   
