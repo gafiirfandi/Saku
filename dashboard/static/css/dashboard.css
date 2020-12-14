@@ -19,8 +19,7 @@
 .dashboard-svg {
   width: 30vw;
   height: auto;
-  margin-bottom: 20px;
-  
+  margin-bottom: 20px; 
 }
 
 .dashboard-header {
@@ -30,11 +29,10 @@
   flex-wrap: wrap; */
 }
 
-.dashboard-title{
+.dashboard-title {
   font-size: 40px;
   font-weight: 900;
-  text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 /* button */
 .active-cyan-2 {
@@ -123,8 +121,18 @@
 }
 
 .text-right {
+  display: flex;
+  flex-direction: column;
+}
+.hargaJob {
   color: green !important;
   font-weight: 500;
+}
+
+.clickJobDetail {
+  padding-top: 50px;
+  text-decoration: underline;
+  color: #3f3d56 !important;
 }
 
 .descWaktu {

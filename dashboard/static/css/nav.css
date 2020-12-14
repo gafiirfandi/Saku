@@ -6,9 +6,8 @@ Navbar  */
 }
 
 .navbar {
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2); */
   background-color: white;
-  
 }
 
 .navbar-brand {
@@ -18,7 +17,7 @@ Navbar  */
   font-size: 36px;
 }
 
-#navbar-items-id{
+#navbar-items-id {
   justify-content: end !important;
 }
 /* .mr-auto {
@@ -36,7 +35,7 @@ Navbar  */
 }
 
 a.nav-link {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   margin: 10px;
 
@@ -74,7 +73,7 @@ a.nav-link {
     margin-top: 0px;
   }
   a.nav-link {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 15px;
   }
   .form-inline {
