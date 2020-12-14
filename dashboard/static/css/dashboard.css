@@ -122,8 +122,18 @@
 }
 
 .text-right {
+  display: flex;
+  flex-direction: column;
+}
+.hargaJob {
   color: green !important;
   font-weight: 500;
+}
+
+.clickJobDetail {
+  padding-top: 50px;
+  text-decoration: underline;
+  color: #3f3d56 !important;
 }
 
 .descWaktu {

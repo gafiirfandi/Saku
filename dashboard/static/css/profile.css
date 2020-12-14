@@ -1,178 +1,175 @@
 .isiProfil {
-    background-color: #f0f0f0;
-    height: 1500px;
-  }
-  .Gambarbelakang {
-    /* background-image: url("blue.png"); */
-    background-color: #0e1724;
-    z-index: -1;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    background-size: 100%;
-  }
-  
-  .contentProfil {
+  background-color: #f0f0f0;
+}
+.Gambarbelakang {
+  /* background-image: url("blue.png"); */
+  background-color: #0e1724;
+  z-index: -1;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  background-size: 100%;
+}
+
+.contentProfil {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+/* konten isi  */
+
+.row {
+  text-align: center;
+}
+
+/* SebelahKiri */
+.ProfilUsCard {
+  /* margin-top: 20px; */
+  /* margin: 20px; */
+  margin: 0 20px; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  border-radius: 10px;
+  max-height: 2000px;
+  max-width: 2200px;
+  padding: 40px;
+  border: 2px solid rgba(0, 0, 0, 0.13);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+  transition: all 0.2s ease-in-out;
+}
+.imageprofil {
+  margin-bottom: 30px;
+}
+.profilimage {
+  width: 300px;
+  height: auto;
+  text-align: center;
+  border: 12px solid #ffffff;
+  border-radius: 40px;
+}
+.rowDescription {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  column-gap: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #5dc26a;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 10px;
+}
+.dollar {
+  font-size: 20px;
+  color: #5dc26a;
+  font-weight: bold;
+  text-align: center;
+}
+.edit_location {
+  font-size: 25px;
+  margin-left: -7px;
+  color: grey;
+}
+
+/* kanan Deskripsi  */
+.rowDescription2 {
+  display: flex;
+
+  margin-bottom: 5px;
+  column-gap: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+.rowDescriptionTitle {
+  display: flex;
+  line-height: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  column-gap: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.rowDescriptionTitle h1 {
+  vertical-align: middle;
+}
+.idProfile,
+.DeskripsiJob {
+  color: grey;
+}
+
+/* star */
+.checked {
+  color: orange;
+}
+
+/* star */
+
+.deskripsipribadi {
+  text-align: justify;
+}
+
+.NamaProfile {
+  font-size: 30px;
+}
+
+.idProfile {
+  font-size: 16px;
+}
+
+.isideskripsiProfile {
+  margin-top: 50px;
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+}
+
+@media only screen and (max-width: 1000px) {
+  .rowDescription2 {
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
-  }
-  
-  /* konten isi  */
-  
-  .row {
+    justify-content: center;
     text-align: center;
+    margin-bottom: 5px;
+    column-gap: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
   }
-  
-  /* SebelahKiri */
-  .ProfilUsCard {
-    /* margin-top: 20px; */
-    /* margin: 20px; */
-    margin: 0 20px; /* Added */
-    float: none; /* Added */
-    margin-bottom: 10px; /* Added */
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    border-radius: 10px;
-    max-height: 2000px;
-    max-width: 2200px;
-    padding: 40px;
-    border: 2px solid rgba(0, 0, 0, 0.13);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
-    transition: all 0.2s ease-in-out;
+  .NamaProfile,
+  .DeskripsiJob {
+    font-size: 30px;
   }
-  .imageprofil {
-    margin-bottom: 30px;
-  }
-  .profilimage {
-    width: 300px;
-    height: auto;
-    text-align: center;
-    border: 12px solid #ffffff;
-    border-radius: 40px;
+  .idProfile {
+    display: none;
   }
   .rowDescription {
+    text-align: center;
+    justify-content: center;
     display: flex;
     flex-direction: row;
     margin-bottom: 5px;
     column-gap: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-  }
-  
-  .dot {
-    height: 10px;
-    width: 10px;
-    background-color: #5dc26a;
-    border-radius: 50%;
-    display: inline-block;
-    margin-top: 10px;
-  }
-  .dollar {
+    font-family: "Roboto", sans-serif;
     font-size: 20px;
-    color: #5dc26a;
-    font-weight: bold;
-    text-align: center;
-  }
-  .edit_location {
-    font-size: 25px;
-    margin-left: -7px;
-    color: grey;
-  }
-  
-  /* kanan Deskripsi  */
-  .rowDescription2 {
-    display: flex;
-  
-    margin-bottom: 5px;
-    column-gap: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
   }
 
-  .rowDescriptionTitle {
-    display: flex;
-    line-height: 100%;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    column-gap: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
+  .ProfilUsCard {
+    margin-left: 30px;
+    margin-right: 30px;
   }
-
-  .rowDescriptionTitle h1{
-    vertical-align: middle;
-  }
-  .idProfile,
-  .DeskripsiJob {
-    color: grey;
-  }
-
-  
-  /* star */
-  .checked {
-    color: orange;
-  }
-  
-  /* star */
-  
-  .deskripsipribadi {
-    text-align: justify;
-  }
-
-  .NamaProfile{
-    font-size: 30px;
-  }
-
-  .idProfile {
-    font-size: 16px;
-  }
-  
-  .isideskripsiProfile {
-    margin-top: 50px;
-    font-size: 16px;
-    font-weight: 300;
-    color: black;
-  }
-  
-  @media only screen and (max-width: 1000px) {
-    .rowDescription2 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      margin-bottom: 5px;
-      column-gap: 10px;
-      font-family: 'Roboto', sans-serif;
-      font-size: 20px;
-    }
-    .NamaProfile,
-    .DeskripsiJob {
-      font-size: 30px;
-    }
-    .idProfile {
-      display: none;
-    }
-    .rowDescription {
-      text-align: center;
-      justify-content: center;
-      display: flex;
-      flex-direction: row;
-      margin-bottom: 5px;
-      column-gap: 10px;
-      font-family: 'Roboto', sans-serif;
-      font-size: 20px;
-    }
-  
-    .ProfilUsCard {
-      margin-left: 30px;
-      margin-right: 30px;
-    }
-  }
-  
+}
