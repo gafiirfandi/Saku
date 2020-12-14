@@ -1,14 +1,9 @@
 <!DOCTYPE html>
-{% load static %}
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
+{% extends 'nav.html' %} 
+{% load static %} 
+{% block title %} 
+{% endblock title%} 
+{% block content %} 
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -21,10 +16,6 @@
       type="text/css"
       href="{% static 'css/admin_page.css' %}"
     />
-
-    <title>Saku.id</title>
-  </head>
-  <body>
     <div class="IsiAdminPage">
       <div class="tableProfile">
         {% comment %} make a table {% endcomment %}
@@ -91,5 +82,5 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-  </body>
-</html>
+
+{% endblock content %}
