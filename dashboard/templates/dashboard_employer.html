@@ -30,14 +30,23 @@
   <!-- Judul  -->
   <div class="dashboard-employer-header">
     <h1 class="JudulListJob">Let's approve and review our jobs.</h1>
-    <img src="{% static 'img/boss.svg' %}" class="dashboard-employer-svg" /> 
-    <br>
-    <svg class="dashboard-employer-arrow-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svelte-c8tyih"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg>
+    <img src="{% static 'img/boss.svg' %}" class="dashboard-employer-svg" />
+    <br />
+    <svg
+      class="dashboard-employer-arrow-down"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 320 512"
+      class="svelte-c8tyih"
+    >
+      <path
+        d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"
+      ></path>
+    </svg>
   </div>
   <!-- make a table-->
   <div class="DashboardEmployerWrapper">
     <table
-      class="table table-hover table-fixed"
+      class="table table-hover table-fixed tableDashboardEmployer"
       id="table-dashboard"
       cellspacing="0"
       cellpadding="0"
@@ -66,9 +75,11 @@
           </td>
           <td><button class="w3-button w3-circle delete">Delete</button></td>
           <td class="col_2 text-lg-center">
-            <a href="">Click Detail>></a>
+            <a href="" class="detailHref">Click Detail>></a>
           </td>
-          <td class="col_0 text-lg-center"><a href="">Click Detail>></a></td>
+          <td class="col_0 text-lg-center">
+            <a href="" class="detailHref">Click Detail>></a>
+          </td>
         </tr>
       </tbody>
       <!--Table body-->
