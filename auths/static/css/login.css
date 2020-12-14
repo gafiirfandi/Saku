@@ -3,10 +3,11 @@ a {
     display: inline-block;
     text-decoration: none;
     font-weight: 400;
-    font-family: "Rufina", serif;
+    
   }
   .brand {
-    font-family: "Lemon", cursive;
+    font-family: inherit;
+    font-weight: 900;
     font-size: 60px;
   }
   .fadeIn {
@@ -273,7 +274,6 @@ a {
       margin-top: 50px;
     }
     .brand {
-      font-family: "Lemon", cursive;
       font-size: 40px;
     }
   }

@@ -3,15 +3,17 @@ Navbar  */
 
 .base {
   background-color: white;
+  margin-bottom: 110px;
 }
 
 .navbar {
-  /* box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
 }
 
 .navbar-brand {
-  font-family: "Lemon", cursive;
+  font-family: inherit;
+  font-weight: 800;
 }
 .brandLogo {
   font-size: 36px;

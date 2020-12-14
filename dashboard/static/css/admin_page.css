@@ -1,5 +1,4 @@
 .IsiAdminPage {
-    background-color: #f0f0f0;
     height: 1000px;
     padding-top: -100px;
   }
@@ -14,6 +13,30 @@
     border: white;
     width: 30px;
     height: 30px;
+  }
+
+  .admin-title{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 35px;
+    font-weight: 900;
+    padding-bottom: 20px;
+  }
+
+  .admin-svg{
+    display: block;
+    margin: auto;
+    width: 25vw;
+    height: auto;
+    padding-bottom: 50px; 
+  }
+
+  .admin-arrow-down{
+    width: 35px;
+    display: block;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
   }
   
   .tableProfile {
